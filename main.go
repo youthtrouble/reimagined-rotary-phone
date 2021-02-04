@@ -29,8 +29,8 @@ func contactFunc(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 
-	homeTemplate = views.NewView("views/home.gohtml")
-	contactTemplate = views.NewView("views/contacts.gohtml")
+	homeTemplate = views.NewView("bootstrap", "views/home.gohtml")
+	contactTemplate = views.NewView("bootstrap", "views/contact.gohtml")
 
 	r := mux.NewRouter()
 
